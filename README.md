@@ -48,7 +48,7 @@ If you have any questions or issues, please feel free to reach out to Ji Noh, Mi
 - **Ji Noh**
   - Email: eun.ji.noh@Vanderbilt.Edu
   - GitHub: jinoh0731
-- **Ji Noh**
+- **Minwoo Sohn**
   - Email: minwoo.sohn@Vanderbilt.Edu
   - GitHub: minu803
 - **Tiffany Lee**
