@@ -1,6 +1,9 @@
 # Big-Data-Project-AirBnB_Clustering
 
 ## Introduction and Problem Statement:
+Airbnb, an online marketplace established in 2008, revolutionized lodging by allowing hosts to rent out unused space or entire homes. This platform offered a cost-effective and unique alternative to traditional hotels and B&Bs. One challenge guests face is determining the quality of a listing without any firsthand experience. This issue has given rise to a phenomenon known as social proof, where potential guests rely heavily on reviews from others to assess the desirability of a listing. New listings, however, suffer from a lack of reviews, creating a "cold start" problem where both Airbnb and prospective guests struggle to evaluate the quality of these properties.
+
+Therefore, this project aims to explore the potential of Airbnb listings with zero reviews, which might be overlooked due to the absence of feedback, yet could be promising options for travelers. Our goal is to assess these properties' value and enhance their visibility to potential guests by categorizing each zero-review listing as ‘Poor’, ‘Average’, or ‘Great’. Through this classification, Airbnb can better recommend specific listings to different users, addressing the initial challenge of the cold start problem for new listings on the platform.
 
 ## File Folder Structure:
 Most of our files are broken up based on the milestone goals accomplished that particular week:
