@@ -7,14 +7,29 @@ Therefore, this project aims to explore the potential of Airbnb listings with ze
 
 ## File Folder Structure:
 Most of our files are broken up based on the milestone goals accomplished that particular week:
-- milestone1 : Contains notebooks on doing EDA for each of our regions: East, Central, and West along with an example joining calendar and listings-detailed tables
-- milestone2 : Contains notebooks on resolving misisng values, doing initial feature engineering, conducting EDA on the aggregate 15 cities, and applying the table joins
-- milestone3 : Contains notebooks on creating an intiial modeling pipeline via pySpark, creating our finalized feature engineering dataset, and conducting an initial attempt on decision tree & random forest models
+- data_for_modeling : Folder contains our final dataset that we used in pySpark to create our transformations and use in our models.
+- milestone1 : Contains notebooks on doing EDA for each of our regions: East, Central, and West along with an example joining calendar and listings-detailed tables.
+- milestone2 : Contains notebooks on resolving misisng values, doing initial feature engineering, conducting EDA on the aggregate 15 cities, and applying the table joins.
+- milestone3 : Contains notebooks on creating an intiial modeling pipeline via pySpark, creating our finalized feature engineering dataset, and conducting an initial attempt on decision tree & random forest models.
 - milestone4 : Contains notebooks on all of our baseline & fine-tuned models for various number of features. The models we conducted in this project are decision tree, logisitic regression, and random forest. Our final predicted zero-review results from the random forest model are in this folder as a zipped up parquet file.
 
 ## Data Preprocessing
 
 ## Exploratory Data Analysis
+To conduct our Exploratory Data Analysis (EDA), we first divided our data into three distinct regions to conduct regional-specific EDA before doing EDA on all 15 cities at once. We decided to take this approach to get a granular understanding of whether there were specific regional differences in our datasets before aggregating all 15 of our cities together. 
+For regional EDA, we have created three Python notebooks, each housed within the 'milestone1' folder. These notebooks facilitate a comprehensive examination of our entire dataset on a regional level, including identifying missing values, analyzing data types, assessing the general range of each column, and compiling essential statistics such as mean, median, and standard deviation.
+Plots that we created within our region-specific notebooks can be grouped into the following broad categories:
+- Price
+- Reviews
+- Geojson file to render each city’s geographic area
+- General property listing information like availability, amenities, host sign-ups, and room type.
+
+For the aggregate 15 cities, EDA can be found in our ‘milestone2’ folder on our Github repository. Plots that we created within our aggregate 15 cities EDA can be grouped into the following broad categories:
+- Amenities
+- Reviews
+- Individual property features such as bedrooms and num_bath features
+- Host related information
+
 
 ## Feature Engineering
 
