@@ -3,7 +3,7 @@
 ## Introduction and Problem Statement:
 
 ## File Folder Structure:
-Most of our files are broken up based on the milestone goals accomplished that particular week
+Most of our files are broken up based on the milestone goals accomplished that particular week:
 - milestone1 : Contains notebooks on doing EDA for each of our regions: East, Central, and West along with an example joining calendar and listings-detailed tables
 - milestone2 : Contains notebooks on resolving misisng values, doing initial feature engineering, conducting EDA on the aggregate 15 cities, and applying the table joins
 - milestone3 : Contains notebooks on creating an intiial modeling pipeline via pySpark, creating our finalized feature engineering dataset, and conducting an initial attempt on decision tree & random forest models
