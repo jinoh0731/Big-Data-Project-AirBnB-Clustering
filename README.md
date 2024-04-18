@@ -14,7 +14,28 @@ Most of our files are broken up based on the milestone goals accomplished that p
 - milestone4 : Contains notebooks on all of our baseline & fine-tuned models for various number of features. The models we conducted in this project are decision tree, logisitic regression, and random forest. Our final predicted zero-review results from the random forest model are in this folder as a zipped up parquet file.
 
 ## Data Preprocessing
+In preparing our dataset for exploratory data analysis, we implemented specific strategies to address missing data, ensuring robust statistical analysis and effective model training:
 
+#### Property Features
+For attributes like 'Bathrooms', 'Bedrooms', and 'Beds', we used related features for imputation:
+- **Bathrooms**: Imputed based on 'Bedrooms' count or half the number of 'Beds' if 'Bedrooms' data was missing.
+- **Beds**: Defaulted to the number of 'Bedrooms'.
+- In cases where all data ('Bathrooms', 'Bedrooms', 'Beds') were missing, we initially set values to zero, subject to further evaluation.
+
+#### Host Features
+We maintained data consistency and avoided speculation in missing host-related information:
+- **Host Since**: Filled missing dates with the most recent date in our dataset.
+- **Host Location**: Imputed as 'unknown' if missing.
+- Boolean fields such as 'Host_is_superhost' and 'Host_identity_verified' were defaulted to 'false'.
+- **Host Listings Count**: Assumed a single listing in the absence of data.
+- **Host Verifications**: Categorized missing entries as 'None'.
+
+#### Review Scores
+Handling of 'Review_scores_value' was particularly nuanced:
+- Absence of scores due to no reviews was documented, especially for newly listed properties.
+- Entries missing 'Review_scores_value' despite having reviews were excluded due to limited data impacting quality assessment.
+
+These approaches preserve the integrity and utility of our dataset, supporting detailed exploratory data analysis and machine learning outcomes.
 ## Exploratory Data Analysis
 To conduct our Exploratory Data Analysis (EDA), we first divided our data into three distinct regions to conduct regional-specific EDA before doing EDA on all 15 cities at once. We decided to take this approach to get a granular understanding of whether there were specific regional differences in our datasets before aggregating all 15 of our cities together. 
 For regional EDA, we have created three Python notebooks, each housed within the 'milestone1' folder. These notebooks facilitate a comprehensive examination of our entire dataset on a regional level, including identifying missing values, analyzing data types, assessing the general range of each column, and compiling essential statistics such as mean, median, and standard deviation.
