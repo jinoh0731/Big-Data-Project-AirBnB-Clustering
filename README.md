@@ -1,4 +1,4 @@
-# Big-Data-Project-AirBnB_Clustering
+# Big Data Project - Airbnb Rating Classification
 
 ## Introduction and Problem Statement:
 Airbnb, an online marketplace established in 2008, revolutionized lodging by allowing hosts to rent out unused space or entire homes. This platform offered a cost-effective and unique alternative to traditional hotels and B&Bs. One challenge guests face is determining the quality of a listing without any firsthand experience. This issue has given rise to a phenomenon known as social proof, where potential guests rely heavily on reviews from others to assess the desirability of a listing. New listings, however, suffer from a lack of reviews, creating a "cold start" problem where both Airbnb and prospective guests struggle to evaluate the quality of these properties.
