@@ -55,6 +55,17 @@ For the aggregate 15 cities, EDA can be found in our ‘milestone2’ folder on 
 ## Feature Engineering
 In the feature engineering phase, we initially processed the 'Amenities' field by converting a list of amenities into a numerical 'num_amenities' count, enhancing the data's usability for machine learning applications in Spark. We also introduced 'Essential_amenities', scoring listings based on the presence of critical amenities like WiFi and air conditioning, to better reflect guest expectations. Additionally, we standardized descriptions of bathrooms into a 'Num_baths' feature and uniquely identified locations by merging neighborhood names with city names to correct ambiguities. Our dataset also included features like 'Full_time_host', categorizing hosts with 10 or more listings as full-time, and 'Host_verification', which was transformed into a concise encoded format to fit Spark’s requirements, thus enriching our data for more precise analysis.
 
+## Target
+Our primary goal in refining the ```review_scores_value``` field was to improve analytical clarity and enhance the model's predictive accuracy regarding the quality of Airbnb listings. Initially featuring continuous numeric values ranging from 0 to 5, this field was transformed into categorical variables with specific thresholds to better serve our analysis needs:
+
+- **Poor**: Listings with scores from 0 to 4.
+- **Average**: Listings scoring between 4 and 4.8.
+- **Great**: Listings with scores from 4.8 to 5.
+  
+These categories were established with thoughtful consideration of Airbnb's criteria for awarding the 'Super Host' badge, which includes a rating threshold of 4.8 or higher, alongside other performance indicators like low cancellation rates and high response rates.
+
+
+
 ## Modeling
 Our modeling phase tackled a multi-class classification problem using three different algorithms: Random Forest, Decision Tree, and Multinomial Logistic Regression, chosen for their suitability to handle the dataset's complexity and feature interactions. We constructed a comprehensive Spark ML pipeline, which included feature transformations like StringIndexer and VectorAssembler, to prepare the data for modeling. Initial models started with 18 features; however, computational limitations led us to optimize our feature set to 13, enhancing model performance and manageability. We employed hyperparameter tuning and feature importance analysis to refine the models further. Each model variant was rigorously tested, and their performance was quantified using standard metrics like accuracy and the confusion matrix.
 
